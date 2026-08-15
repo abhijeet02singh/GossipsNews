@@ -1,0 +1,175 @@
+{
+    "status": "ok",
+    "totalResults": 13,
+    "articles": [
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Joey Cappelletti, Stephen Groves",
+            "title": "Can Trump keep Republicans united in the government shutdown fight?",
+            "description": "Republican leaders have presented a united stance as they try to keep the government open and berate Democrats for demanding health care policy changes in exchange for their votes. It's a role reversal from previous funding battles. The change is happening be…",
+            "url": "https://apnews.com/article/government-shutdown-republicans-trump-83d6fb2a9bcc082cbbbe65525c3e9cc8",
+            "urlToImage": "https://dims.apnews.com/dims4/default/41ce496/2147483647/strip/true/crop/5555x3125+0+289/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F29%2Fd4%2Feb0e7e911b6309015faf7a973091%2F93f5cf195e8542ada02a53081ae2053a",
+            "publishedAt": "2025-10-02T16:38:55Z",
+            "content": "WASHINGTON (AP) Gathered in the unusually quiet halls of the U.S. Capitol, Republican leaders faced the cameras for a second day and implored Democrats to reopen the government.\r\nWe want to protect h… [+6645 chars]"
+        },
+        {
+            "source": {
+                "id": "cbs-news",
+                "name": "CBS News"
+            },
+            "author": "CBS News",
+            "title": "Why healthcare for immigrants is being blamed for the government shutdown",
+            "description": "Republican lawmakers continue to argue that Democrats' demands for healthcare for immigrants are the cause of the government shutdown. CBS News' Nikole Killion and Aaron Navarro have more.",
+            "url": "https://www.cbsnews.com/video/why-healthcare-for-immigrants-is-being-blamed-for-the-government-shutdown/",
+            "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/10/02/accf8f29-8ed3-46cb-91d2-37b41a560e8a/thumbnail/1200x630/3c9b1f27df0cceea0a443517fc04a7c4/cbsn-fusion-why-healthcare-for-immigrants-is-being-blamed-for-the-government-shutdown-thumbnail.jpg",
+            "publishedAt": "2025-10-02T16:32:00+00:00",
+            "content": "Copyright ©2025 CBS Interactive Inc. All rights reserved."
+        },
+        {
+            "source": {
+                "id": "breitbart-news",
+                "name": "Breitbart News"
+            },
+            "author": "John Binder",
+            "title": "Hakeem Jeffries Contradicts Fellow Democrats, Claims Govt Shutdown Is Not over Giving Healthcare to Illegal Aliens",
+            "description": "House Minority Leader Hakeem Jeffries (D-NY) is contradicting fellow Democrats on the government shutdown, claiming the party is not looking to provide healthcare benefits to illegal aliens.",
+            "url": "https://www.breitbart.com/politics/2025/10/02/hakeem-jeffries-contradicts-fellow-democrats-claims-government-shutdown-is-not-over-giving-healthcare-to-illegal-aliens/",
+            "urlToImage": "https://media.breitbart.com/media/2025/10/GettyImages-2238614795-640x335.jpg",
+            "publishedAt": "2025-10-02T16:06:36Z",
+            "content": "House Minority Leader Hakeem Jeffries (D-NY) is contradicting fellow Democrats on the government shutdown, claiming the party is not looking to provide healthcare benefits to illegal aliens.\r\n“Federa… [+3314 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": null,
+            "title": "Risk of deadly cancer triples with hidden mouth bacteria, study finds",
+            "description": "Scientists link poor oral health to dramatically higher pancreatic cancer risk, emphasizing the importance of regular brushing and dental care for prevention.",
+            "url": "https://www.foxnews.com/health/risk-deadly-cancer-triples-hidden-mouth-bacteria-study-finds",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2025/10/older-woman-flossing.jpg",
+            "publishedAt": "2025-10-02T14:52:16.7529573Z",
+            "content": "People with certain bacteria and fungi in their mouths may face a dramatically higher risk of pancreatic cancer more than three times greater according to new research from NYU Langone Health and and… [+4987 chars]"
+        },
+        {
+            "source": {
+                "id": "abc-news-au",
+                "name": "ABC News (AU)"
+            },
+            "author": "Paige Cockburn",
+            "title": "Fertility treatments impacted by donor limit mix-up can proceed under NSW Health exemption",
+            "description": "Fertility treatments in NSW will be able to continue even in cases where the family donor limit has been breached after the state government issued a temporary exemption.",
+            "url": "https://www.abc.net.au/news/2025-10-02/fertility-treatments-to-proceed-after-nsw-health-exemption/105845260",
+            "urlToImage": "https://live-production.wcms.abc-cdn.net.au/ed330560ec239fa6c564bf9e4ab10acc?impolicy=wcms_watermark_news&cropH=1080&cropW=1920&xPos=0&yPos=36&width=862&height=485&imformat=generic",
+            "publishedAt": "2025-10-02T07:04:02Z",
+            "content": "Fertility treatments in New South Wales will be able to proceed even if the donor limit has been breached after an exemption was granted by the state government.\r\nThe announcement comes after several… [+3066 chars]"
+        },
+        {
+            "source": {
+                "id": "medical-news-today",
+                "name": "Medical News Today"
+            },
+            "author": "Corrie Pelc",
+            "title": "99% of heart attack, stroke, heart failure cases linked to preventable risk factors",
+            "description": "More than 99% of people who experienced a heart attack, heart failure, or stroke had at least one of four major cardiovascular risk factors above healthy levels, a new study reports.",
+            "url": "https://www.medicalnewstoday.com/articles/heart-attack-stroke-heart-failure-linked-to-preventable-risk-factors",
+            "urlToImage": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2025/09/Lifestyle-heart-Stocksy_txp1e56107aV6B400_Medium_3956867-Facebook.jpg",
+            "publishedAt": "2025-09-29T16:30:00Z",
+            "content": "<ul><li>Cardiovascular diseases, such as heart failure, heart attack, and stroke, are the leading causes of death around the world.</li><li>Previous research shows there are a number of modifiable li… [+5669 chars]"
+        },
+        {
+            "source": {
+                "id": "medical-news-today",
+                "name": "Medical News Today"
+            },
+            "author": "Robby Berman",
+            "title": "Coffee drinkers have a lower risk of liver diseases, evidence shows",
+            "description": "Thanks to its special compounds, coffee can support liver health in at least five different and significant ways, a new review assessing decades of evidence suggests.",
+            "url": "https://www.medicalnewstoday.com/articles/coffee-lower-risk-liver-diseases",
+            "urlToImage": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2025/09/Coffee-protects-Stocksy_txp86cfb6bbZHB400_Medium_6256707-Facebook.jpg",
+            "publishedAt": "2025-09-27T06:00:00Z",
+            "content": "<ul><li>Coffee can promote liver health, according to a new analysis of decades of existing data.</li><li>In addition to affirming proposed connections between coffee and a healthier liver, the new r… [+6051 chars]"
+        },
+        {
+            "source": {
+                "id": "medical-news-today",
+                "name": "Medical News Today"
+            },
+            "author": "Maria Cohut, Ph.D.",
+            "title": "Does the Mediterranean diet hold the key to longevity?",
+            "description": "In this episode of In Conversation, Dr. Tom Barber, professor of endocrinology and obesity expert, helps us explore the evidence linking a Mediterranean diet to a longer, healthier life.",
+            "url": "https://www.medicalnewstoday.com/articles/does-the-mediterranean-diet-hold-the-key-to-longevity",
+            "urlToImage": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2025/08/facebook-in_cnvo-med_diet-1200x628.jpg",
+            "publishedAt": "2025-08-07T11:56:00Z",
+            "content": "Can you eat your way to a longer, healthier life? And if so, what diet might best foster longevity? Over the past decade or so, a long string of studies has added to the evidence that a Mediterranean… [+2852 chars]"
+        },
+        {
+            "source": {
+                "id": "news24",
+                "name": "News24"
+            },
+            "author": null,
+            "title": "Fedhealth",
+            "description": "Get Ready for a Reboot",
+            "url": "https://partners.24.com/fedhealth-reboot/index.html",
+            "urlToImage": "https://partners.24.com/fedhealth-reboot/assets/Y2NZEDjQIX/reboot-lifestyle-image-2-social-cover.jpg",
+            "publishedAt": "2025-08-02T10:14:58",
+            "content": "Get Ready for a Reboot"
+        },
+        {
+            "source": {
+                "id": "news24",
+                "name": "News24"
+            },
+            "author": "Sponsored Content",
+            "title": "How to be financially healthier and get rewarded for it",
+            "description": "Vitality Money, Discovery Bank’s behaviour-change programme, gives you real insight into how you spend, how to save more and how to manage your money well – and you get rewarded for your improved money habits.",
+            "url": "https://www.news24.com/brandstory/partner-content/how-to-be-financially-healthier-and-rewarded-with-vitality-money-20250704-0814",
+            "urlToImage": "https://news24cobalt.24.co.za/resources/029b-1e27dd892804-784fdea61559-1000/format/largeThumb/discovery_resized.jpeg",
+            "publishedAt": "2025-08-01T09:50:47",
+            "content": "We all have money habits that wed rather not look at too closely. But avoiding them doesnt make the stress go away; it just keeps you stuck in the same cycle. What if there was a simple way to unders… [+5567 chars]"
+        },
+        {
+            "source": {
+                "id": "recode",
+                "name": "Recode"
+            },
+            "author": "Celia Ford",
+            "title": "Phones and mental health: What if an app can tell you if you’re depressed?",
+            "description": "Emerging apps like MoodCapture use AI to guess when you’ll be sad. Can they also help you feel better?",
+            "url": "https://www.vox.com/future-perfect/24150430/depression-detection-technology-ai-tests-apps-mental-health",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/sKqyLa2kPkjuiUjAhCZcLqm3CvQ=/0x0:4590x2403/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25435888/681977094.jpg",
+            "publishedAt": "2024-05-07T11:30:00Z",
+            "content": "If you have a sore throat, you can get tested for a host of things Covid, RSV, strep, the flu and receive a pretty accurate diagnosis (and maybe even treatment). Even when youre not sick, vital signs… [+15415 chars]"
+        },
+        {
+            "source": {
+                "id": "the-irish-times",
+                "name": "The Irish Times"
+            },
+            "author": "Jennifer Bray",
+            "title": "Abortion rules should be relaxed, review to recommend",
+            "description": "Minister for Health Stephen Donnelly considering report by barrister Marie O’Shea which examined operation of the existing law",
+            "url": "https://www.irishtimes.com/ireland/social-affairs/2023/03/29/review-calls-for-abortion-law-to-be-relaxed/",
+            "urlToImage": "https://www.irishtimes.com/resizer/DycgF-s39PfaIVo4cOhhhNhDjqM=/1200x630/filters:format(jpg):quality(70):focal(1109x649:1119x659)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/YVVSZCLNN6CW4NWJKGEPUSEAPE.jpg",
+            "publishedAt": "2023-03-29T04:15:00Z",
+            "content": "A new review of the States abortion law is set to recommend a loosening of existing rules which could involve the removal of the three-day wait to access medication.\r\nMinister for Health Stephen Donn… [+2934 chars]"
+        },
+        {
+            "source": {
+                "id": "the-globe-and-mail",
+                "name": "The Globe And Mail"
+            },
+            "author": "Wency Leung",
+            "title": "‘COVID hasn’t gone away’: Five things health experts say we must do to end the pandemic",
+            "description": "Boosting health care capacity, encouraging third doses and better understanding long COVID are among the issues health experts say need to be addressed",
+            "url": "https://www.theglobeandmail.com/canada/article-covid-19-pandemic-not-over/",
+            "urlToImage": "https://www.theglobeandmail.com/resizer/nYUYq7AN4xv1_6tgavE1CKi6OvQ=/1200x800/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/tgam/OSOQKLUMCZEDDPFOKUWLUFOLFY.png",
+            "publishedAt": "2022-06-15T17:00:00Z",
+            "content": "Restaurants are open. Festivals are back. Masks, for the most part, are optional. And starting Monday, June 20, proof of vaccination will no longer be required of Canadian air and train passengers.\r\n… [+7848 chars]"
+        }
+    ]
+}
