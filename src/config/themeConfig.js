@@ -1,0 +1,36 @@
+/**
+ * Theme configuration
+ */
+
+export const themeConfig = {
+  light: {
+    '--background-color': '#ffffff',
+    '--surface-color': '#f8f9fa',
+    '--text-color': '#1a1a1a',
+    '--text-secondary': '#666666',
+    '--text-muted': '#999999',
+    '--primary-color': '#bb1919',
+    '--border-color': '#e0e0e0',
+    '--shadow-light': '0 2px 8px rgba(0, 0, 0, 0.1)',
+    '--shadow-medium': '0 4px 16px rgba(0, 0, 0, 0.15)',
+    '--shadow-heavy': '0 8px 32px rgba(0, 0, 0, 0.2)',
+    '--transition-base': 'all 0.3s cubic-bezier(0.23, 1, 0.32, 1)',
+    '--font-heading': 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    '--font-body': 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  },
+  dark: {
+    '--background-color': '#0a0a0a',
+    '--surface-color': '#1a1a1a',
+    '--text-color': '#ffffff',
+    '--text-secondary': '#cccccc',
+    '--text-muted': '#999999',
+    '--primary-color': '#ff4444',
+    '--border-color': '#333333',
+    '--shadow-light': '0 2px 8px rgba(0, 0, 0, 0.3)',
+    '--shadow-medium': '0 4px 16px rgba(0, 0, 0, 0.4)',
+    '--shadow-heavy': '0 8px 32px rgba(0, 0, 0, 0.5)',
+    '--transition-base': 'all 0.3s cubic-bezier(0.23, 1, 0.32, 1)',
+    '--font-heading': 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    '--font-body': 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  }
+};

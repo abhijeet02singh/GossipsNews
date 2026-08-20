@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
+import { THEMES, THEME_STORAGE_KEY } from '../../../constants/appConstants';
 
 export class ThemeToggle extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      theme: 'light'
+      theme: THEMES.LIGHT
     };
   }
 
   componentDidMount() {
-    // Check for saved theme preference or default to light mode
-    const savedTheme = localStorage.getItem('theme');
+    // Check for saved theme preference or default to system preference
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    const initialTheme = savedTheme || (systemPrefersDark ? THEMES.DARK : THEMES.LIGHT);
     
     this.setState({ theme: initialTheme });
     this.applyTheme(initialTheme);
   }
 
   toggleTheme = () => {
-    const newTheme = this.state.theme === 'light' ? 'dark' : 'light';
+    const newTheme = this.state.theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT;
     this.setState({ theme: newTheme });
     this.applyTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
+    localStorage.setItem(THEME_STORAGE_KEY, newTheme);
   }
 
   applyTheme = (theme) => {
@@ -36,10 +37,10 @@ export class ThemeToggle extends Component {
       <button 
         className="theme-toggle"
         onClick={this.toggleTheme}
-        aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+        aria-label={`Switch to ${theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT} mode`}
+        title={`Switch to ${theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT} mode`}
       >
-        {theme === 'light' ? (
+        {theme === THEMES.LIGHT ? (
           <svg 
             width="20" 
             height="20" 

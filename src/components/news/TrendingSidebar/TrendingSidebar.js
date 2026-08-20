@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
+import { formatDate } from '../../../utils/dateUtils';
 
 export class TrendingSidebar extends Component {
-  formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString(undefined, options);
-  }
 
   render() {
     const { articles = [] } = this.props;
@@ -68,7 +65,7 @@ export class TrendingSidebar extends Component {
                     {article.title}
                   </h4>
                   <div className="trending-meta">
-                    <span>{article.source?.name || 'News Source'}</span> • <span>{this.formatDate(article.publishedAt)}</span>
+                    <span>{article.source?.name || 'News Source'}</span> • <span>{formatDate(article.publishedAt)}</span>
                   </div>
                 </div>
               </li>

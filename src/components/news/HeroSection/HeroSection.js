@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
+import { formatDate } from '../../../utils/dateUtils';
+import { DEFAULT_IMAGE_URL } from '../../../constants/appConstants';
 
 export class HeroSection extends Component {
-  formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString(undefined, options);
-  }
 
   render() {
     const { articles } = this.props;
@@ -23,13 +21,13 @@ export class HeroSection extends Component {
             {/* Featured Article */}
             <div className="hero-featured" onClick={() => window.open(featured.url, '_blank')}>
               <img 
-                src={featured.urlToImage || "https://assets2.cbsnewsstatic.com/hub/i/r/2025/10/03/93fcf742-eb77-40a8-b0ea-150efcd5ebaf/thumbnail/1200x630/518884b3fdc649ca8111d6aa45a356fb/screenshot-2025-10-03-at-2-45-23-pm.png"} 
+                src={featured.urlToImage || DEFAULT_IMAGE_URL} 
                 alt={featured.title || "Featured news"} 
               />
               <div className="hero-content">
                 <h1 className="hero-title">{featured.title}</h1>
                 <div className="hero-meta">
-                  <span>{featured.source?.name}</span> • <span>{featured.author ? `By ${featured.author}` : ''}</span> • <span>{this.formatDate(featured.publishedAt)}</span>
+                  <span>{featured.source?.name}</span> • <span>{featured.author ? `By ${featured.author}` : ''}</span> • <span>{formatDate(featured.publishedAt)}</span>
                 </div>
               </div>
             </div>
@@ -39,13 +37,13 @@ export class HeroSection extends Component {
               {sidebar.map((article, index) => (
                 <div key={index} className="hero-small" onClick={() => window.open(article.url, '_blank')}>
                   <img 
-                    src={article.urlToImage || "https://assets2.cbsnewsstatic.com/hub/i/r/2025/10/03/93fcf742-eb77-40a8-b0ea-150efcd5ebaf/thumbnail/1200x630/518884b3fdc649ca8111d6aa45a356fb/screenshot-2025-10-03-at-2-45-23-pm.png"} 
+                    src={article.urlToImage || DEFAULT_IMAGE_URL} 
                     alt={article.title || "News image"} 
                   />
                   <div className="hero-small-content">
                     <h4 className="hero-small-title">{article.title}</h4>
                     <div className="hero-small-meta">
-                      <span>{article.source?.name}</span> • <span>{this.formatDate(article.publishedAt)}</span>
+                      <span>{article.source?.name}</span> • <span>{formatDate(article.publishedAt)}</span>
                     </div>
                   </div>
                 </div>

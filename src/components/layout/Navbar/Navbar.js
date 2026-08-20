@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
-import ThemeToggle from './ThemeToggle';
+import { ThemeToggle } from '../../ui/ThemeToggle';
+import { APP_NAME } from '../../../constants/appConstants';
 
 export class Navbar extends Component {
   constructor(props) {
@@ -46,7 +47,7 @@ export class Navbar extends Component {
         <div className="navbar-gradient-border"></div>
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <Link className="navbar-brand-modern" to="/">GossipsNews</Link>
+            <Link className="navbar-brand-modern" to="/">{APP_NAME}</Link>
             
             <button 
               className="mobile-menu-toggle"

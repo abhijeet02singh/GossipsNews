@@ -1,7 +1,8 @@
 import './App.css';
 import React, { Component } from 'react';
-import Navbar from './components/Navbar';
-import News from './components/News';
+import { Navbar } from './components/layout/Navbar';
+import { News } from './components/news/News';
+import { DEFAULT_PAGE_SIZE } from './constants/appConstants';
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,7 +10,7 @@ import {
 } from "react-router-dom";
 
 export default class App extends Component {
-  pageSize= 9;
+  pageSize = DEFAULT_PAGE_SIZE;
   render() {
     return (
       <div>

@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import NewsItem from "./NewsItem";
-import SkeletonLoader from "./Spinner";
-import HeroSection from "./HeroSection";
-import Footer from "./Footer";
-import TrendingSidebar from "./TrendingSidebar";
 import PropTypes from 'prop-types';
+import { NewsItem } from '../NewsItem';
+import { SkeletonLoader } from '../../ui/Spinner';
+import { HeroSection } from '../HeroSection';
+import { Footer } from '../../layout/Footer';
+import { TrendingSidebar } from '../TrendingSidebar';
+import { fetchTopHeadlines } from '../../../services/newsApi';
+import { capitalizeFirstLetter } from '../../../utils/textUtils';
+import { DEFAULT_PAGE_SIZE, APP_NAME } from '../../../constants/appConstants';
 
 export class News extends Component {
   static defaultProps = {
@@ -19,10 +22,6 @@ export class News extends Component {
     category: PropTypes.string,
   };
 
-  capitalizeFirstLetter = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-  
   constructor(props) {
     super(props);
     this.state = {
@@ -31,20 +30,23 @@ export class News extends Component {
         page: 1,
         totalResults: 0
     };
-    document.title = `${this.capitalizeFirstLetter(this.props.category)} - GossipsNews`;
+    document.title = `${capitalizeFirstLetter(this.props.category)} - ${APP_NAME}`;
   }
 
   async updateNews() {
     this.setState({ loading: true });
-    const apiKey = process.env.REACT_APP_NEWS_API_KEY;
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     
     try {
-      let data = await fetch(url);
-      let parseData = await data.json();
+      const data = await fetchTopHeadlines({
+        country: this.props.country,
+        category: this.props.category,
+        page: this.state.page,
+        pageSize: this.props.pageSize
+      });
+      
       this.setState({ 
-        articles: parseData.articles, 
-        totalResults: parseData.totalResults,
+        articles: data.articles || [], 
+        totalResults: data.totalResults || 0,
         loading: false 
       });
     } catch (error) {
@@ -92,7 +94,7 @@ export class News extends Component {
             <main className="main-content">
               <div style={{ padding: page === 1 && this.props.category === 'general' ? '2rem 0' : '3rem 0' }}>
                 <h1 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: '2.5rem', fontWeight: '900', marginBottom: '3rem', color: 'var(--text-color)' }}>
-                  Top {this.capitalizeFirstLetter(this.props.category)} Headlines
+                  Top {capitalizeFirstLetter(this.props.category)} Headlines
                 </h1>
                 
                 {/* Loading State */}

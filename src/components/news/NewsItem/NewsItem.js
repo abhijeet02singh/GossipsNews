@@ -1,19 +1,9 @@
 import React, { Component } from 'react'
+import { formatDate } from '../../../utils/dateUtils';
+import { calculateReadingTime } from '../../../utils/textUtils';
+import { DEFAULT_IMAGE_URL } from '../../../constants/appConstants';
 
 export class NewsItem extends Component {
-
-  formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString(undefined, options);
-  }
-
-  calculateReadingTime = (text) => {
-    if (!text) return '2 min read';
-    const wordsPerMinute = 200;
-    const words = text.split(' ').length;
-    const readingTime = Math.ceil(words / wordsPerMinute);
-    return `${readingTime} min read`;
-  }
 
   handleCardClick = (newsUrl) => {
     if (newsUrl && newsUrl !== '#') {
@@ -28,7 +18,7 @@ export class NewsItem extends Component {
       <article className="news-card glass-card" onClick={() => this.handleCardClick(newsUrl)}>
         <div className="news-card-image">
           <img 
-            src={!ImageUrl ? "https://assets2.cbsnewsstatic.com/hub/i/r/2025/10/03/93fcf742-eb77-40a8-b0ea-150efcd5ebaf/thumbnail/1200x630/518884b3fdc649ca8111d6aa45a356fb/screenshot-2025-10-03-at-2-45-23-pm.png" : ImageUrl}
+            src={!ImageUrl ? DEFAULT_IMAGE_URL : ImageUrl}
             alt={title || "News image"} 
             loading="lazy"
           />
@@ -47,13 +37,13 @@ export class NewsItem extends Component {
               By {!author ? "Unknown" : author}
             </span>
             <span className="news-card-date">
-              {date ? this.formatDate(date) : ''}
+              {date ? formatDate(date) : ''}
             </span>
           </div>
           
           <div className="news-card-footer">
             <span className="reading-time glass-reading-time">
-              {this.calculateReadingTime(description)}
+              {calculateReadingTime(description)}
             </span>
             <a 
               href={newsUrl} 

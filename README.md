@@ -1,6 +1,29 @@
-# Getting Started with Create React App
+# GossipsNews - Modern News Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based news application that fetches and displays news articles from various categories using the NewsAPI. Features a responsive design, dark/light theme support, and a clean user interface with glassmorphism effects.
+
+## Project Structure
+
+The project follows a systematic, scalable folder structure:
+
+```
+src/
+├── components/           # Reusable UI components
+│   ├── layout/          # Layout components (Navbar, Footer)
+│   ├── news/            # News-specific components
+│   └── ui/              # Generic UI components
+├── services/            # API and external services
+├── hooks/               # Custom React hooks
+├── utils/               # Utility functions
+├── constants/          # Application constants
+├── config/              # Configuration files
+├── types/               # PropTypes definitions
+├── assets/              # Static assets
+├── styles/              # Global styles
+└── context/             # React Context providers
+```
+
+For detailed documentation, see [DOCUMENTATION.md](./DOCUMENTATION.md)
 
 ## Available Scripts
 
