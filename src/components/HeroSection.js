@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NewsItem from './NewsItem';
 
 export class HeroSection extends Component {
   formatDate = (dateString) => {
